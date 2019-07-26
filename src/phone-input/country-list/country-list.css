@@ -1,0 +1,59 @@
+.country_list {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    z-index: 99;
+    background-color: azure;
+}
+
+ul {
+    margin: 5px 2px 5px;
+    height: 250px;
+    overflow: auto;
+    padding: 0;
+}
+
+
+ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: #c78957;
+    border-radius: 10px;
+
+}
+
+dl:hover {
+    background-color: rgba(180, 180, 180, 0.57);
+}
+
+.selected {
+    background-color: rgba(180, 180, 180, 0.57);
+    z-index: 3;
+}
+
+.current_country {
+    background-color: rgba(99, 197, 163, 0.45);
+}
+
+dl {
+    cursor: pointer;
+}
+
+.list_item {
+    margin: 2px 0;
+}
+
+.item_name {
+    display: inline-block;
+    margin: 0;
+}
+
+.item_code {
+    color: gray;
+}
+
+

@@ -1,0 +1,38 @@
+.select {
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    width: 45px;
+    height: 30px;
+    border: 1px solid gray;
+    border-right: none;
+    display: inline-block;
+    cursor: pointer;
+    top: 11px;
+    background-color: rgba(182, 200, 247, 0.38);
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+
+
+.arrow {
+    position: absolute;
+    right: -4px;
+    height: 11px;
+    top: 50%;
+    transform: translateY(-50%) rotateZ(90deg);
+    color: gray;
+    font-weight: bold;
+}
+
+.only_icon {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 13px;
+}

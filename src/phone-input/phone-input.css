@@ -1,0 +1,20 @@
+label {
+    display: block;
+}
+
+select {
+    width: 50px;
+}
+
+.main_div {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    width: 300px;
+    height: 65px;
+    z-index: 1;
+}
+
+
+
