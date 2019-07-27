@@ -6,7 +6,7 @@ import allCountries from './data';
 
 const a = () => {
     return (
-        <div>
+        <div className='all'>
             <div className='main'>
                 <PhoneInput countryList={allCountries} />
             </div>

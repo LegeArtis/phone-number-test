@@ -14,7 +14,7 @@ code {
 
 .main {
   position: relative;
-  width: 600px;
+  width: 320px;
   height: 80px;
   left: 20%;
   z-index: 5;
@@ -22,7 +22,13 @@ code {
 
 .test {
   position: relative;
-  width: 600px;
+  width: 320px;
   height: 80px;
   left: 20%;
+}
+
+.all {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -36,7 +36,30 @@ export default class PhoneInput extends React.Component{
         });
     };
 
+    getResource = async  (url) => {
+      const res = await fetch(url, {
+          headers : {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+          }
+      });
+      const body = await res.json();
+      return body;
+    };
 
+    componentWillMount() {
+        const {list} = this.props.countryList;
+        const url = 'https://ipinfo.io?token=104ede535d04f1';
+        this.getResource(url)
+            .then((body) => {
+                const index = list.findIndex(value => value.iso2 === body.country.toLowerCase());
+                console.log(list[index]);
+                this.setState({
+                    selectedCountry: list[index]
+                })
+            });
+
+    }
 
     render() {
             return (

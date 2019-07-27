@@ -24,10 +24,10 @@ export default class CountryList extends React.Component{
 
     scrolling = (e) => {
         if (count < this.props.list.length-1 && e.key === 'ArrowDown') {
-            count++
+            count++;
         }
         if (count > 0 && e.key === 'ArrowUp') {
-            count--
+            count--;
         }
     };
 
