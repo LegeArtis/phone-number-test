@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/phone-number-test/static/css/main.dea21844.chunk.css",
+    "main.js": "/phone-number-test/static/js/main.bfa0b513.chunk.js",
+    "main.js.map": "/phone-number-test/static/js/main.bfa0b513.chunk.js.map",
+    "runtime~main.js": "/phone-number-test/static/js/runtime~main.67876089.js",
+    "runtime~main.js.map": "/phone-number-test/static/js/runtime~main.67876089.js.map",
+    "static/js/2.7c0a1338.chunk.js": "/phone-number-test/static/js/2.7c0a1338.chunk.js",
+    "static/js/2.7c0a1338.chunk.js.map": "/phone-number-test/static/js/2.7c0a1338.chunk.js.map",
+    "index.html": "/phone-number-test/index.html",
+    "precache-manifest.1b4574e0724a6c546ab25d4f8b394372.js": "/phone-number-test/precache-manifest.1b4574e0724a6c546ab25d4f8b394372.js",
+    "service-worker.js": "/phone-number-test/service-worker.js",
+    "static/css/main.dea21844.chunk.css.map": "/phone-number-test/static/css/main.dea21844.chunk.css.map",
+    "static/media/flags.css": "/phone-number-test/static/media/flags.723494a4.png"
+  }
+}
