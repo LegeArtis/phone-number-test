@@ -23,7 +23,7 @@
 
 .arrow {
     position: absolute;
-    right: -4px;
+    right: -2px;
     height: 11px;
     top: 50%;
     transform: translateY(-50%) rotateZ(90deg);
