@@ -15,7 +15,7 @@ code {
 .main {
   position: relative;
   width: 320px;
-  height: 80px;
+  height: 130px;
   left: 20%;
   z-index: 5;
 }
