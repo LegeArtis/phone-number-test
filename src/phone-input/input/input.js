@@ -7,7 +7,6 @@ export default class Input extends React.Component{
         tel: '+' + this.props.country.dialCode
     };
 
-
     onChange = (e) => {
       let a = e.target.value.toString().replace(/[^0-9]/g,'');
       const { country: { format }, codeList, inputChange } = this.props;
@@ -17,8 +16,6 @@ export default class Input extends React.Component{
       } else if (a === '1' || a === '') {
           inputChange('1');
       }
-
-
 
       let formValue;
       if (format) {
@@ -32,12 +29,14 @@ export default class Input extends React.Component{
               }
               return previousValue;
           }), '');
-
       } else {
-          formValue = '+' + a;
+          formValue = a;
       }
 
-
+      if (!formValue.startsWith('+')) {
+          console.log('add +');
+          formValue = '+' + formValue;
+      }
 
       this.setState( {
             tel: formValue
@@ -48,9 +47,15 @@ export default class Input extends React.Component{
 
     componentWillReceiveProps(nextProps, nextContext) {
         if (this.props.country !== nextProps.country) {
-            this.setState({
-                tel: '+' + nextProps.country.dialCode
-            })
+            if (nextProps.country.dialCode === '1') {
+                this.setState({
+                    tel: '+'
+                });
+            } else {
+                this.setState({
+                    tel: '+' + nextProps.country.dialCode
+                });
+            }
         }
     }
 
